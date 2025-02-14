@@ -1,0 +1,66 @@
+.left {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  width: 45%;
+
+  .search-number-input {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    align-items: stretch;
+    input {
+      width: 100%;
+      padding: 10px;
+      border-radius: 10px;
+      border: 1px solid black;
+    }
+    .search-button {
+      background-color: transparent;
+      color: var(black);
+      border: none;
+      font-size: 1.2rem;
+      cursor: pointer;
+    }
+  }
+  .conversations {
+    border: 1px solid black;
+    padding: 15px;
+    border-radius: 10px;
+    width: 100%;
+    max-height: 80vh;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    &::-webkit-scrollbar {
+      width: 0;
+    }
+    ul {
+      width: 100%;
+      list-style-type: none;
+      gap: 1rem;
+      display: flex;
+      flex-direction: column;
+      li {
+        border: 1px solid black;
+        padding: 15px;
+        border-radius: 10px;
+        cursor: pointer;
+        .conversation {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          .conversation-info {
+            display: flex;
+            flex-direction: column;
+            gap: 0.2rem;
+          }
+        }
+      }
+      .active {
+        background-color: lightblue;
+      }
+    }
+  }
+}

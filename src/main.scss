@@ -1,0 +1,47 @@
+:root {
+  --red: hsl(358, 70%, 36%);
+  --white: #ffffff;
+  --black: #1c1c1c;
+  --purple: #ad57bc;
+  --blue: #17a7c6;
+  --roboto: 'Roboto', serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--white);
+  margin: 0rem;
+  font-family: var(--roboto);
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li,
+button,
+div,
+a {
+  margin: 0;
+  padding: 0;
+  color: var(--1c1c1c);
+}
+
+.no-scroll {
+  overflow: hidden !important;
+  height: 100%;
+}

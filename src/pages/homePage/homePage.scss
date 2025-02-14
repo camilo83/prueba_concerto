@@ -1,0 +1,157 @@
+.page-container {
+  max-width: 1400px;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  padding-inline: 5vw;
+  .page-info {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    padding-top: 1rem;
+
+    .right {
+      display: flex;
+      flex-direction: column;
+      gap: 3rem;
+      width: 50%;
+      .filters {
+        display: flex;
+        flex-direction: row;
+        gap: 0.5rem;
+      }
+      .phone {
+        border: 1px solid black;
+        max-height: 80vh;
+        height: 80vh;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        .screen {
+          border: 1px solid black;
+          height: 90%;
+          width: 95%;
+          overflow-y: scroll;
+
+          &::-webkit-scrollbar {
+            width: 0;
+          }
+          .top {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            height: 5%;
+            position: sticky;
+            padding: 10px;
+            top: 0;
+            background-color: var(--white);
+          }
+          .content {
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            .message-date {
+              display: flex;
+              flex-direction: column;
+              gap: 1rem;
+              .message {
+                font-size: 1rem;
+                padding: 5px;
+                border-radius: 10px;
+                max-width: 70%;
+              }
+              .incoming {
+                display: flex;
+                background-color: lightgray;
+                align-self: flex-end;
+                border: 2px solid lightgray;
+              }
+              .outgoing {
+                display: flex;
+                background-color: lightblue;
+                align-self: flex-start;
+                border: 2px solid lightblue;
+              }
+              .date-label {
+                background-color: lightgreen;
+                align-self: center;
+                border: 2px solid lightgreen;
+                font-size: 1rem;
+                padding: 5px;
+                border-radius: 10px;
+              }
+            }
+          }
+        }
+
+        .button {
+          width: 2.5vw;
+          display: flex;
+          border: 1px solid black;
+          height: 2.5vw;
+          position: absolute;
+          bottom: 4px;
+          border-radius: 99999px;
+        }
+      }
+    }
+  }
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid black;
+}
+
+.system-message.sc-jlZhew {
+  font-size: 12px;
+  color: gray;
+  font-weight: bold;
+  background-color: transparent;
+  margin: 0px;
+  margin-block: 5px;
+  margin-left: 8px;
+  position: relative;
+  padding: 0 !important;
+  padding-block: 2px !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .system-message.cunkHt {
+    background-color: lightgreen;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .sc-iGgWBj {
+    display: flex;
+    align-self: center;
+  }
+  .gtIPtS {
+    margin-left: 0;
+  }
+
+  .sc-dAlyuH {
+    display: none;
+  }
+  .sc-jEACwC {
+    display: none;
+  }
+  .sc-dAbbOL {
+    display: none;
+  }
+}
+
+.sc-eDPEul {
+  display: none;
+}
